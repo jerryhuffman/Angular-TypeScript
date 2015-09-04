@@ -1,0 +1,21 @@
+{
+  "name": "Angular-TypeScript",
+  "version": "0.0.0",
+  "description": "Angular-TypeScript",
+  "main": "app.js",
+  "author": {
+    "name": "jerry",
+    "email": "jerryhuffman@live.com"
+  },
+  "dependencies": {
+    "angular": "^1.4.5",
+    "angular-mocks": "^1.4.5",
+    "angular-resource": "^1.4.5",
+    "angular-route": "^1.4.5",
+    "bootstrap": "^3.3.5",
+    "express": "3.4.4",
+    "jade": "*",
+    "jquery": "^2.1.4",
+    "stylus": "*"
+  }
+}
