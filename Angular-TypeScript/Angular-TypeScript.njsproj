@@ -35,6 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app\app.ts" />
+    <TypeScriptCompile Include="app\products\product.ts" />
     <TypeScriptCompile Include="app\products\productListCtrl.ts" />
     <TypeScriptCompile Include="public\scripts\typings\mime\mime.d.ts" />
     <TypeScriptCompile Include="public\scripts\typings\serve-static\serve-static.d.ts" />
@@ -54,6 +55,7 @@
     <TypeScriptCompile Include="public\scripts\typings\express\express.d.ts" />
     <TypeScriptCompile Include="public\scripts\typings\node\node.d.ts" />
     <TypeScriptCompile Include="public\scripts\typings\stylus\stylus.d.ts" />
+    <Content Include=".settings\tasks.json" />
     <Content Include="app\products\productDetailView.html" />
     <Content Include="app\products\productListView.html" />
     <Content Include="index.html" />
@@ -73,6 +75,7 @@
     <Content Include="public\styles\bootstrap.css" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include=".settings\" />
     <Folder Include="app\" />
     <Folder Include="app\common\" />
     <Folder Include="app\common\services\" />
