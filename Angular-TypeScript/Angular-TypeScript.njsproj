@@ -36,6 +36,8 @@
   <ItemGroup>
     <TypeScriptCompile Include="app\app.ts" />
     <TypeScriptCompile Include="app\products\productListCtrl.ts" />
+    <TypeScriptCompile Include="public\scripts\typings\mime\mime.d.ts" />
+    <TypeScriptCompile Include="public\scripts\typings\serve-static\serve-static.d.ts" />
     <TypeScriptCompile Include="startup.ts" />
     <TypeScriptCompile Include="app\common\services\common.services.ts" />
     <TypeScriptCompile Include="app\common\services\dataAccessService.ts" />
@@ -82,6 +84,8 @@
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
+    <Folder Include="public\scripts\typings\mime\" />
+    <Folder Include="public\scripts\typings\serve-static\" />
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />
     <Folder Include="public\scripts\" />
