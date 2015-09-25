@@ -1,5 +1,5 @@
 var app;
 (function (app) {
-    angular.module("productManagement", []);
+    angular.module("productManagement", ["common.services", "productResourceMock"]);
 })(app || (app = {}));
 //# sourceMappingURL=app.js.map

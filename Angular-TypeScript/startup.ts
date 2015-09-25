@@ -6,6 +6,7 @@ var app = express();
 
 // all environments
 app.set('port', process.env.PORT || 1337);
+//app.set('port', String(1337));
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.json());
