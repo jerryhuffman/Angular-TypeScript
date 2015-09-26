@@ -36,16 +36,19 @@ module app.common {
             "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png");
         products.push(product);
 
-        var productUrl = "/api/products";
+        var productUrl = "api/products";
 
-        $httpBackend.whenGET(productUrl).respond(products);
+        $httpBackend.whenGET('api/products').respond(products);
 
-        var editingRegex = new RegExp(productUrl + "/[0-9][0-9]*", '');
-        $httpBackend.whenGET(editingRegex).respond(function(method, url, data) {
+        //var editingRegex = new RegExp(productUrl + "/[0-9][0-9]*", '');
+        //var editingRegex = new RegExp(productUrl + "/\d+", '');
+        //$httpBackend.whenGET(editingRegex).respond(function (method, url, data) {
+        $httpBackend.whenGET(/api\/products\/\d+/).respond(function(method, url, data) {
             var product = { "productId": 0 };
             var parameters = url.split('/');
             var length = parameters.length;
-            var id = Number(parameters[length - 1]);
+            //var id = Number(parameters[length - 1]);
+            var id = +parameters[length - 1];
 
             if (id > 0) {
                 for (var i = 0; i < products.length; i++) {
